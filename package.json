@@ -1,6 +1,6 @@
 {
   "name": "get-cors-origin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "get-cors-origin transforms an array of strings into a cors configuration.",
   "contributors": [
     {
