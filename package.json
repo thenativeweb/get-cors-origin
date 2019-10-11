@@ -16,11 +16,12 @@
       "email": "jan-hendrik.grundhoefer@thenativeweb.io"
     }
   ],
-  "main": "dist/getCorsOrigin.js",
+  "main": "build/lib/getCorsOrigin.js",
+  "types": "build/lib/getCorsOrigin.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "2.0.1",
-    "roboter": "3.0.4"
+    "assertthat": "4.0.2",
+    "roboter": "8.1.3"
   },
   "repository": {
     "type": "git",
