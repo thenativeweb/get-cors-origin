@@ -1,5 +1,5 @@
-import assert from 'assertthat';
-import looksLikeARegex from '../../lib/looksLikeARegex';
+import { assert } from 'assertthat';
+import { looksLikeARegex } from '../../lib/looksLikeARegex';
 
 suite('looksLikeARegex', (): void => {
   test('returns true if value starts and ends with a slash.', async (): Promise<void> => {

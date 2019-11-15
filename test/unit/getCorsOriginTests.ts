@@ -1,5 +1,5 @@
-import assert from 'assertthat';
-import getCorsOrigin from '../../lib/getCorsOrigin';
+import { assert } from 'assertthat';
+import { getCorsOrigin } from '../../lib/getCorsOrigin';
 
 suite('getCorsOrigin', (): void => {
   test('returns * if * is given.', async (): Promise<void> => {

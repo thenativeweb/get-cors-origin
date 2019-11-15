@@ -1,4 +1,4 @@
-import looksLikeARegex from './looksLikeARegex';
+import { looksLikeARegex } from './looksLikeARegex';
 
 const getCorsOrigin = function (value: string | string[]): string | (string | RegExp)[] {
   if (value === '*') {
@@ -20,4 +20,4 @@ const getCorsOrigin = function (value: string | string[]): string | (string | Re
   return origins;
 };
 
-export default getCorsOrigin;
+export { getCorsOrigin };

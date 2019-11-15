@@ -23,13 +23,13 @@ $ npm install get-cors-origin
 First you need to add a reference to get-cors-origin to your application:
 
 ```javascript
-const getCorsOrigin = require('get-cors-origin').default;
+const { getCorsOrigin } = require('get-cors-origin');
 ```
 
 If you use TypeScript, use the following code instead:
 
 ```typescript
-import getCorsOrigin from 'get-cors-origin';
+import { getCorsOrigin } from 'get-cors-origin';
 ```
 
 Then you can call the `getCorsOrigin` function to transform an array of strings into a configuration suitable for the [cors](https://www.npmjs.com/package/cors) module:
