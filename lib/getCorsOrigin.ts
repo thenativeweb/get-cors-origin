@@ -1,23 +1,29 @@
+import { CorsOrigin } from './CorsOrigin';
+import { errors } from './errors';
 import { looksLikeARegex } from './looksLikeARegex';
 
-const getCorsOrigin = function (value: string | string[]): string | (string | RegExp)[] {
-  if (value === '*') {
-    return value;
-  }
-
-  const values = Array.isArray(value) ? value : [ value ];
-
-  const origins = values.map((origin): string | RegExp => {
-    const updatedOrigin = origin.trim();
-
-    if (looksLikeARegex(updatedOrigin)) {
-      return new RegExp(updatedOrigin.slice(1, -1), 'u');
+const getCorsOrigin = function (value: any): CorsOrigin {
+  if (typeof value === 'string') {
+    if (value === '*') {
+      return value;
     }
 
-    return updatedOrigin;
-  });
+    throw new errors.CorsOriginInvalid(`Not a valid cors origin value. Please wrap strings other than '*' in an array.`, { data: value });
+  }
 
-  return origins;
+  if (Array.isArray(value)) {
+    return value.map((origin): string | RegExp => {
+      const trimmedOrigin = origin.trim();
+
+      if (looksLikeARegex(trimmedOrigin)) {
+        return new RegExp(trimmedOrigin.slice(1, -1), 'u');
+      }
+
+      return trimmedOrigin;
+    });
+  }
+
+  throw new errors.CorsOriginInvalid('Not a valid cors origin value.', { data: value });
 };
 
 export { getCorsOrigin };

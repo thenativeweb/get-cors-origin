@@ -1,7 +1,7 @@
 {
   "name": "get-cors-origin",
   "version": "3.0.0",
-  "description": "get-cors-origin transforms an array of strings into a cors configuration.",
+  "description": "get-cors-origin parser any value into a cors configuration if possible.",
   "contributors": [
     {
       "name": "Golo Roden",
@@ -14,11 +14,17 @@
     {
       "name": "Jan-Hendrik Grundhöfer",
       "email": "jan-hendrik.grundhoefer@thenativeweb.io"
+    },
+    {
+      "name": "Hannes Leutloff",
+      "email": "hannes.leutloff@thenativeweb.io"
     }
   ],
   "main": "build/lib/getCorsOrigin.js",
   "types": "build/lib/getCorsOrigin.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "defekt": "5.0.0"
+  },
   "devDependencies": {
     "assertthat": "5.0.2",
     "roboter": "9.2.4"
