@@ -35,6 +35,7 @@ import { getCorsOrigin } from 'get-cors-origin';
 Then you can call the `getCorsOrigin` function to parse any value into a configuration suitable for the [cors](https://www.npmjs.com/package/cors) module if possible:
 
 -   If you provide a `*` as parameter, you just get `*` back.
+-   If you provide one or more domains as parameters in an array, you get an array of sanitized domains back.
 -   If you provide a domain as a string that contains a regular expression, the string is converted to a regular expression.
 -   If you provide anything else, an error will be thrown.
 
