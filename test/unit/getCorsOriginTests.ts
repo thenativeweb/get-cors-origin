@@ -32,7 +32,7 @@ suite('getCorsOrigin', (): void => {
     assert.that((): any => getCorsOrigin('http://www.thenativeweb.io')).is.throwing(
       (ex): boolean =>
         (ex as CustomError).code === 'ECORSORIGININVALID' &&
-        ex.message === `Not a valid cors origin value. Please wrap strings other than '*' in an array.` &&
+        ex.message === `Not a valid CORS origin value. Please wrap strings other than '*' in an array.` &&
         (ex as CustomError).data === 'http://www.thenativeweb.io'
     );
   });
@@ -41,13 +41,13 @@ suite('getCorsOrigin', (): void => {
     assert.that((): any => getCorsOrigin(false)).is.throwing(
       (ex): boolean =>
         (ex as CustomError).code === 'ECORSORIGININVALID' &&
-        ex.message === `Not a valid cors origin value.` &&
+        ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === false
     );
     assert.that((): any => getCorsOrigin(true)).is.throwing(
       (ex): boolean =>
         (ex as CustomError).code === 'ECORSORIGININVALID' &&
-        ex.message === `Not a valid cors origin value.` &&
+        ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === true
     );
   });
@@ -56,7 +56,7 @@ suite('getCorsOrigin', (): void => {
     assert.that((): any => getCorsOrigin(1337)).is.throwing(
       (ex): boolean =>
         (ex as CustomError).code === 'ECORSORIGININVALID' &&
-        ex.message === `Not a valid cors origin value.` &&
+        ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === 1337
     );
   });
@@ -67,7 +67,7 @@ suite('getCorsOrigin', (): void => {
     assert.that((): any => getCorsOrigin(objectCorsOrigin)).is.throwing(
       (ex): boolean =>
         (ex as CustomError).code === 'ECORSORIGININVALID' &&
-        ex.message === `Not a valid cors origin value.` &&
+        ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === objectCorsOrigin
     );
   });
