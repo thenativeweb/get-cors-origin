@@ -1,7 +1,7 @@
 {
   "name": "get-cors-origin",
   "version": "3.0.0",
-  "description": "get-cors-origin parser any value into a cors configuration if possible.",
+  "description": "get-cors-origin parses any value into a cors configuration if possible.",
   "contributors": [
     {
       "name": "Golo Roden",
