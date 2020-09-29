@@ -1,6 +1,6 @@
 import { CorsOrigin } from './CorsOrigin';
 import { errors } from './errors';
-import { looksLikeARegex } from './looksLikeARegex';
+import { looksLikeRegex } from './looksLikeRegex';
 
 const getCorsOrigin = function (value: any): CorsOrigin {
   if (typeof value === 'string') {
@@ -15,7 +15,7 @@ const getCorsOrigin = function (value: any): CorsOrigin {
     return value.map((origin): string | RegExp => {
       const trimmedOrigin = origin.trim();
 
-      if (looksLikeARegex(trimmedOrigin)) {
+      if (looksLikeRegex(trimmedOrigin)) {
         return new RegExp(trimmedOrigin.slice(1, -1), 'u');
       }
 
