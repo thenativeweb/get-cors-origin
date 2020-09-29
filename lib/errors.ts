@@ -4,6 +4,4 @@ const errors = defekt({
   CorsOriginInvalid: {}
 });
 
-export {
-  errors
-};
+export { errors };
