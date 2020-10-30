@@ -53,11 +53,11 @@ suite('getCorsOrigin', (): void => {
   });
 
   test('throws an error if a number is given.', async (): Promise<void> => {
-    assert.that((): any => getCorsOrigin(1337)).is.throwing(
+    assert.that((): any => getCorsOrigin(1_337)).is.throwing(
       (ex): boolean =>
         (ex as CustomError).code === 'ECORSORIGININVALID' &&
         ex.message === 'Not a valid CORS origin value.' &&
-        (ex as CustomError).data === 1337
+        (ex as CustomError).data === 1_337
     );
   });
 
