@@ -1,3 +1,10 @@
+## [4.0.5](https://github.com/thenativeweb/get-cors-origin/compare/4.0.4...4.0.5) (2020-11-03)
+
+
+### Bug Fixes
+
+* Fix headline for robot section in readme. ([#176](https://github.com/thenativeweb/get-cors-origin/issues/176)) ([c6020c2](https://github.com/thenativeweb/get-cors-origin/commit/c6020c2cd55af8bcc79d03f17660eb7f45c1026d))
+
 ## [4.0.4](https://github.com/thenativeweb/get-cors-origin/compare/4.0.3...4.0.4) (2020-10-29)
 
 
