@@ -1,3 +1,10 @@
+## [4.0.7](https://github.com/thenativeweb/get-cors-origin/compare/4.0.6...4.0.7) (2020-11-26)
+
+
+### Bug Fixes
+
+* bump defekt from 5.2.2 to 5.3.0 ([#201](https://github.com/thenativeweb/get-cors-origin/issues/201)) ([27d233c](https://github.com/thenativeweb/get-cors-origin/commit/27d233c5d616cf9dc7533553ce1353a51c0e5949))
+
 ## [4.0.6](https://github.com/thenativeweb/get-cors-origin/compare/4.0.5...4.0.6) (2020-11-03)
 
 
