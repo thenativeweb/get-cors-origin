@@ -1,6 +1,7 @@
 import { assert } from 'assertthat';
 import { CustomError } from 'defekt';
 import { getCorsOrigin } from '../../lib/getCorsOrigin';
+import * as errors from '../../lib/errors';
 
 suite('getCorsOrigin', (): void => {
   test(`returns '*' if '*' is given.`, async (): Promise<void> => {
@@ -31,7 +32,7 @@ suite('getCorsOrigin', (): void => {
   test(`throws an error if a string other than '*' is given.`, async (): Promise<void> => {
     assert.that((): any => getCorsOrigin('http://www.thenativeweb.io')).is.throwing(
       (ex): boolean =>
-        (ex as CustomError).code === 'ECORSORIGININVALID' &&
+        (ex as CustomError).code === errors.CorsOriginInvalid.code &&
         ex.message === `Not a valid CORS origin value. Please wrap strings other than '*' in an array.` &&
         (ex as CustomError).data === 'http://www.thenativeweb.io'
     );
@@ -40,13 +41,13 @@ suite('getCorsOrigin', (): void => {
   test('throws an error if a boolean is given.', async (): Promise<void> => {
     assert.that((): any => getCorsOrigin(false)).is.throwing(
       (ex): boolean =>
-        (ex as CustomError).code === 'ECORSORIGININVALID' &&
+        (ex as CustomError).code === errors.CorsOriginInvalid.code &&
         ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === false
     );
     assert.that((): any => getCorsOrigin(true)).is.throwing(
       (ex): boolean =>
-        (ex as CustomError).code === 'ECORSORIGININVALID' &&
+        (ex as CustomError).code === errors.CorsOriginInvalid.code &&
         ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === true
     );
@@ -55,7 +56,7 @@ suite('getCorsOrigin', (): void => {
   test('throws an error if a number is given.', async (): Promise<void> => {
     assert.that((): any => getCorsOrigin(1_337)).is.throwing(
       (ex): boolean =>
-        (ex as CustomError).code === 'ECORSORIGININVALID' &&
+        (ex as CustomError).code === errors.CorsOriginInvalid.code &&
         ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === 1_337
     );
@@ -66,7 +67,7 @@ suite('getCorsOrigin', (): void => {
 
     assert.that((): any => getCorsOrigin(objectCorsOrigin)).is.throwing(
       (ex): boolean =>
-        (ex as CustomError).code === 'ECORSORIGININVALID' &&
+        (ex as CustomError).code === errors.CorsOriginInvalid.code &&
         ex.message === 'Not a valid CORS origin value.' &&
         (ex as CustomError).data === objectCorsOrigin
     );
