@@ -1,3 +1,10 @@
+## [4.0.12](https://github.com/thenativeweb/get-cors-origin/compare/4.0.11...4.0.12) (2021-03-25)
+
+
+### Bug Fixes
+
+* Migrate from master to main. ([#269](https://github.com/thenativeweb/get-cors-origin/issues/269)) ([b301494](https://github.com/thenativeweb/get-cors-origin/commit/b3014940a40eabf49214ba014621c41f85491157))
+
 ## [4.0.11](https://github.com/thenativeweb/get-cors-origin/compare/4.0.10...4.0.11) (2021-03-25)
 
 
