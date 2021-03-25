@@ -1,6 +1,6 @@
 import { CorsOrigin } from './CorsOrigin';
-import { errors } from './errors';
 import { looksLikeRegex } from './looksLikeRegex';
+import * as errors from './errors';
 
 const getCorsOrigin = function (value: any): CorsOrigin {
   if (typeof value === 'string') {
@@ -8,7 +8,7 @@ const getCorsOrigin = function (value: any): CorsOrigin {
       return value;
     }
 
-    throw new errors.CorsOriginInvalid(`Not a valid CORS origin value. Please wrap strings other than '*' in an array.`, { data: value });
+    throw new errors.CorsOriginInvalid({ message: `Not a valid CORS origin value. Please wrap strings other than '*' in an array.`, data: value });
   }
 
   if (Array.isArray(value)) {
@@ -23,7 +23,7 @@ const getCorsOrigin = function (value: any): CorsOrigin {
     });
   }
 
-  throw new errors.CorsOriginInvalid('Not a valid CORS origin value.', { data: value });
+  throw new errors.CorsOriginInvalid({ message: 'Not a valid CORS origin value.', data: value });
 };
 
 export { getCorsOrigin };

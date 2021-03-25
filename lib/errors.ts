@@ -1,7 +1,7 @@
 import { defekt } from 'defekt';
 
-const errors = defekt({
-  CorsOriginInvalid: {}
-});
+class CorsOriginInvalid extends defekt({ code: 'CorsOriginInvalid' }) { }
 
-export { errors };
+export {
+  CorsOriginInvalid
+};
