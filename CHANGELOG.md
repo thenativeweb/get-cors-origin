@@ -1,3 +1,10 @@
+## [4.0.11](https://github.com/thenativeweb/get-cors-origin/compare/4.0.10...4.0.11) (2021-03-25)
+
+
+### Bug Fixes
+
+* update defekt ([#268](https://github.com/thenativeweb/get-cors-origin/issues/268)) ([a268380](https://github.com/thenativeweb/get-cors-origin/commit/a2683808fc1163dfcda2080ead4074b7e00a56ce))
+
 ## [4.0.10](https://github.com/thenativeweb/get-cors-origin/compare/4.0.9...4.0.10) (2021-01-27)
 
 
