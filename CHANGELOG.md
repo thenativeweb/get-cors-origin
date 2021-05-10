@@ -1,3 +1,10 @@
+## [4.0.14](https://github.com/thenativeweb/get-cors-origin/compare/4.0.13...4.0.14) (2021-05-10)
+
+
+### Bug Fixes
+
+* bump hosted-git-info from 2.8.8 to 2.8.9 ([#286](https://github.com/thenativeweb/get-cors-origin/issues/286)) ([7917645](https://github.com/thenativeweb/get-cors-origin/commit/79176450cfc2ec9d7f2643724ddebb40a9192417))
+
 ## [4.0.13](https://github.com/thenativeweb/get-cors-origin/compare/4.0.12...4.0.13) (2021-03-29)
 
 
