@@ -1,3 +1,10 @@
+## [4.0.15](https://github.com/thenativeweb/get-cors-origin/compare/4.0.14...4.0.15) (2021-05-17)
+
+
+### Bug Fixes
+
+* bump defekt from 7.1.0 to 7.1.1 ([#289](https://github.com/thenativeweb/get-cors-origin/issues/289)) ([55f06ac](https://github.com/thenativeweb/get-cors-origin/commit/55f06ac410d8c4614e4b320ed6e6439f4f222c20))
+
 ## [4.0.14](https://github.com/thenativeweb/get-cors-origin/compare/4.0.13...4.0.14) (2021-05-10)
 
 
