@@ -1,6 +1,6 @@
 {
   "name": "get-cors-origin",
-  "version": "4.0.18",
+  "version": "4.0.19",
   "description": "get-cors-origin parses any value into a cors configuration if possible.",
   "contributors": [
     {

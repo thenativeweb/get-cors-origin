@@ -1,3 +1,10 @@
+## [4.0.19](https://github.com/thenativeweb/get-cors-origin/compare/4.0.18...4.0.19) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump glob-parent from 5.1.1 to 5.1.2 ([#301](https://github.com/thenativeweb/get-cors-origin/issues/301)) ([91d6488](https://github.com/thenativeweb/get-cors-origin/commit/91d6488324e932cd116b71f44fee0912dd06920f))
+
 ## [4.0.18](https://github.com/thenativeweb/get-cors-origin/compare/4.0.17...4.0.18) (2021-06-10)
 
 
