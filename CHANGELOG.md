@@ -1,3 +1,10 @@
+## [4.0.18](https://github.com/thenativeweb/get-cors-origin/compare/4.0.17...4.0.18) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump trim-newlines from 3.0.0 to 3.0.1 ([#302](https://github.com/thenativeweb/get-cors-origin/issues/302)) ([cc87e2e](https://github.com/thenativeweb/get-cors-origin/commit/cc87e2e4a8169a9c8781a28355d6010576f479c4))
+
 ## [4.0.17](https://github.com/thenativeweb/get-cors-origin/compare/4.0.16...4.0.17) (2021-05-31)
 
 
