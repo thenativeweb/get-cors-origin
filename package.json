@@ -1,6 +1,6 @@
 {
   "name": "get-cors-origin",
-  "version": "4.0.19",
+  "version": "4.0.20",
   "description": "get-cors-origin parses any value into a cors configuration if possible.",
   "contributors": [
     {
@@ -23,7 +23,7 @@
   "main": "build/lib/index.js",
   "types": "build/lib/index.d.ts",
   "dependencies": {
-    "defekt": "7.2.0"
+    "defekt": "7.2.3"
   },
   "devDependencies": {
     "assertthat": "6.3.1",
