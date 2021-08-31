@@ -1,3 +1,10 @@
+## [4.0.24](https://github.com/thenativeweb/get-cors-origin/compare/4.0.23...4.0.24) (2021-08-31)
+
+
+### Bug Fixes
+
+* bump defekt from 7.3.3 to 8.0.0 ([#323](https://github.com/thenativeweb/get-cors-origin/issues/323)) ([471c5f4](https://github.com/thenativeweb/get-cors-origin/commit/471c5f452202348e88f28732a10a32584d649f5f))
+
 ## [4.0.23](https://github.com/thenativeweb/get-cors-origin/compare/4.0.22...4.0.23) (2021-07-27)
 
 
