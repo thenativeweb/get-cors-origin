@@ -1,3 +1,10 @@
+## [4.0.25](https://github.com/thenativeweb/get-cors-origin/compare/4.0.24...4.0.25) (2022-03-25)
+
+
+### Bug Fixes
+
+* bump minimist from 1.2.5 to 1.2.6 ([#341](https://github.com/thenativeweb/get-cors-origin/issues/341)) ([e012d30](https://github.com/thenativeweb/get-cors-origin/commit/e012d30d90c9d27d79b9f3943512863b3abd951d))
+
 ## [4.0.24](https://github.com/thenativeweb/get-cors-origin/compare/4.0.23...4.0.24) (2021-08-31)
 
 
